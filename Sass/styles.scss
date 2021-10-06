@@ -1,0 +1,108 @@
+@import "variables/variables.scss";
+@import "header/header.scss";
+@import "bouton/bouton.scss";
+
+@font-face {
+  font-family: "rob";
+  src: url("/police/Roboto-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "rob";
+}
+
+.global_width {
+  width: 768px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+.localisation {
+  margin-top: 25px;
+  &__ville {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(167, 167, 167), 2%, #eaeaea);
+    font-size: $txt-size;
+    &__icone {
+      margin-top: $txt-size;
+      margin-right: $txt-size;
+    }
+  }
+
+  &__bloc {
+    font-size: $h2-size;
+    height: 480px;
+    background-color: $background-color;
+    text-align: center;
+    &__int {
+      width: 600px;
+      height: 400px;
+      margin: auto;
+      padding-top: 20px;
+    }
+  }
+}
+
+.btn-principaux {
+  @include btn_principaux;
+  @include btn_principaux_color;
+  @include btn_shadow;
+  &:hover {
+    @include btn_principaux_hover;
+  }
+  a {
+    @include btn_pricipaux_lien;
+  }
+}
+
+.fonctionnement {
+  font-size: $h2-size;
+  h2 {
+    margin-left: 50px;
+  }
+  &__etape {
+    display: flex;
+    align-items: center;
+    background: $background-color;
+    height: 150px;
+    width: 650px;
+    margin: 50px auto;
+    border-radius: 45px;
+    @include btn_shadow;
+    &--color {
+      background: lighten($color: $color-primary, $amount: 36%);
+    }
+    &__num {
+      background: $color-primary;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      margin-left: -25px;
+      p {
+        margin: 6px 16px;
+        color: white;
+      }
+    }
+    &__icone {
+      color: grey;
+      font-size: 40px;
+      margin-left: 50px;
+      &--size {
+        font-size: 50px;
+      }
+      &--color {
+        color: $color-primary;
+      }
+    }
+    &__texte {
+      margin: 0 50px;
+    }
+  }
+}

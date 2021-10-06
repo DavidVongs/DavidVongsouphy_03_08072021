@@ -1,0 +1,10 @@
+$size_logo: 350px !default;
+
+header {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  img {
+    width: $size_logo;
+  }
+}

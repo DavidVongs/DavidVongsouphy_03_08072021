@@ -1,0 +1,10 @@
+@import "variables/variables.scss";
+
+header {
+  i {
+    position: absolute;
+    font-size: $arrow-size;
+    margin-left: -160px;
+    margin-top: 10px;
+  }
+}
