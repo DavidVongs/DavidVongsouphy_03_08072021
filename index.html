@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/9e58c4fc28.js"
       crossorigin="anonymous"
@@ -15,50 +15,70 @@
     <div class="global_width">
       <!--header-->
       <header>
-        <div class="fas fa-arrow-left"></div>
         <img src="image/ohmyfood.png" alt="logo ohmyfood" />
       </header>
 
       <article class="localisation">
-        <div>
-          <i class="fas fa-map-marker-alt"></i>
+        <div class="localisation__ville">
+          <i class="fas fa-map-marker-alt localisation__ville__icone"></i>
           <p>Paris, Belleville</p>
         </div>
-
-        <div>
-          <h1>Réserver le menu qui vous convient</h1>
-          <br />
-          <p>
-            Découvrez des restaurants d'exception, séléctionnés par nos soins.
-          </p>
-          <br />
-          <a href="">Explorer nos restaurants</a>
+        <div class="localisation__bloc">
+          <div class="localisation__bloc__int">
+            <h1 class="gras">Réserver le menu qui vous convient</h1>
+            <p>
+              Découvrez des restaurants d'exception, séléctionnés par nos soins.
+            </p>
+            <div class="btn-principaux">
+              <a href="#">Explorer nos restaurants</a>
+            </div>
+          </div>
         </div>
       </article>
 
-      <aside class="fonctionnement">
+      <aside class="fonctionnement gras">
         <h2>Fonctionnement</h2>
-        <div class="fonctionnement__etape">
-          <div class="fonctionnement__etape__1">
-            <div>
+        <div class="fonctionnement__bloc">
+          <div class="fonctionnement__etape">
+            <div class="fonctionnement__etape__num">
               <p>1</p>
             </div>
-            <i class="fas fa-mobile-alt"></i>
-            <p>Choisissez un restaurant</p>
+            <div
+              class="
+                fonctionnement__etape__icone fonctionnement__etape__icone--size
+              "
+            >
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="fonctionnement__etape__texte">
+              <p>Choisissez un restaurant</p>
+            </div>
           </div>
-          <div class="fonctionnement__etape__2">
-            <div>
+          <div class="fonctionnement__etape">
+            <div class="fonctionnement__etape__num">
               <p>2</p>
             </div>
-            <i class="fas fa-list-ul"></i>
-            <p>Composez votre menu</p>
+            <div class="fonctionnement__etape__icone">
+              <i class="fas fa-list-ul"></i>
+            </div>
+            <div class="fonctionnement__etape__texte">
+              <p>Composez votre menu</p>
+            </div>
           </div>
-          <div class="fonctionnement__etape__3">
-            <div>
+          <div class="fonctionnement__etape fonctionnement__etape--color">
+            <div class="fonctionnement__etape__num">
               <p>3</p>
             </div>
-            <i class="fas fa-store"></i>
-            <p>Dégustez au restaurant</p>
+            <div
+              class="
+                fonctionnement__etape__icone fonctionnement__etape__icone--color
+              "
+            >
+              <i class="fas fa-store"></i>
+            </div>
+            <div class="fonctionnement__etape__texte">
+              <p>Dégustez au restaurant</p>
+            </div>
           </div>
         </div>
       </aside>

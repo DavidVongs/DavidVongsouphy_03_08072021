@@ -1,0 +1,119 @@
+header {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+}
+header img {
+  width: 350px;
+}
+
+@font-face {
+  font-family: "rob";
+  src: url("/police/Roboto-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "rob";
+}
+
+.global_width {
+  width: 768px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+.localisation {
+  margin-top: 25px;
+}
+.localisation__ville {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#a7a7a7, 2%, #eaeaea);
+  font-size: 35px;
+}
+.localisation__ville__icone {
+  margin-top: 35px;
+  margin-right: 35px;
+}
+.localisation__bloc {
+  font-size: 30px;
+  height: 480px;
+  background-color: #f6f6f7;
+  text-align: center;
+}
+.localisation__bloc__int {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.btn-principaux {
+  margin: 0 auto;
+  height: 90px;
+  width: 400px;
+  border-radius: 60px;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  box-shadow: #dbdbdf 0px 5px 8px 5px;
+}
+.btn-principaux:hover {
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
+  box-shadow: #c0c0c7 0px 5px 8px 5px;
+}
+.btn-principaux a {
+  display: block;
+  color: white;
+  padding-top: 25px;
+}
+
+.fonctionnement {
+  font-size: 30px;
+}
+.fonctionnement h2 {
+  margin-left: 50px;
+}
+.fonctionnement__etape {
+  display: flex;
+  align-items: center;
+  background: #f6f6f7;
+  height: 150px;
+  width: 650px;
+  margin: 50px auto;
+  border-radius: 45px;
+  box-shadow: #dbdbdf 0px 5px 8px 5px;
+}
+.fonctionnement__etape--color {
+  background: #f4eefc;
+}
+.fonctionnement__etape__num {
+  background: #9356dc;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-left: -25px;
+}
+.fonctionnement__etape__num p {
+  margin: 6px 16px;
+  color: white;
+}
+.fonctionnement__etape__icone {
+  color: grey;
+  font-size: 40px;
+  margin-left: 50px;
+}
+.fonctionnement__etape__icone--size {
+  font-size: 50px;
+}
+.fonctionnement__etape__icone--color {
+  color: #9356dc;
+}
+.fonctionnement__etape__texte {
+  margin: 0 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */
