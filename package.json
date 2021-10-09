@@ -1,0 +1,19 @@
+{
+  "name": "projet_3_ohmyfood",
+  "version": "1.0.0",
+  "description": "projet 3 OPC",
+  "main": "index.js",
+  "scripts": {
+    "Sass": "sass --watch ./Sass/styles.scss:./css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidVongs/DavidVongsouphy_03_08072021.git"
+  },
+  "author": "David Vongsouphy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidVongs/DavidVongsouphy_03_08072021/issues"
+  },
+  "homepage": "https://github.com/DavidVongs/DavidVongsouphy_03_08072021#readme"
+}

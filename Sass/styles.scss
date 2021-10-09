@@ -1,6 +1,6 @@
 @import "variables/variables.scss";
 @import "header/header.scss";
-@import "bouton/bouton.scss";
+@import "mixin_accueil/mixin_accueil.scss";
 
 @font-face {
   font-family: "rob";
@@ -17,6 +17,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .gras {
@@ -63,9 +64,9 @@ a {
 }
 
 .fonctionnement {
-  font-size: $h2-size;
+  @include base_bloc;
   h2 {
-    margin-left: 50px;
+    @include margin_h2;
   }
   &__etape {
     display: flex;
@@ -92,10 +93,10 @@ a {
     }
     &__icone {
       color: grey;
-      font-size: 40px;
+      font-size: $icone-size;
       margin-left: 50px;
       &--size {
-        font-size: 50px;
+        font-size: $icone-size + 10px;
       }
       &--color {
         color: $color-primary;
@@ -103,6 +104,114 @@ a {
     }
     &__texte {
       margin: 0 50px;
+    }
+  }
+}
+
+.restaurant {
+  @include base_bloc;
+  background: $background-color;
+  height: 2450px;
+  h2 {
+    @include margin_h2;
+    padding-top: 80px;
+  }
+  &__bloc {
+    position: relative;
+    width: 650px;
+    height: 2150px;
+    padding-top: 50px;
+    @include centrer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &__img {
+      height: 350px;
+      overflow: hidden;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+    figure {
+      @include centrer;
+      @include btn_shadow;
+      width: 100%;
+      height: 500px;
+      background-color: white;
+      border-radius: 30px;
+      img {
+        width: 100%;
+        margin-top: -80px;
+      }
+      figcaption {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+          font-size: $icone-size + 10px;
+          margin-right: 50px;
+        }
+        p {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+.heart1 {
+  z-index: 1;
+  position: relative;
+  &:hover {
+    & .heart2 {
+      height: 100%;
+    }
+  }
+}
+.heart2 {
+  @include remplissage_coeur;
+}
+
+.nouveau {
+  position: absolute;
+  p {
+    @include nouveau;
+  }
+}
+
+footer {
+  background: $footer-color;
+  font-size: $h2-size;
+  height: 400px;
+  img {
+    filter: invert(100%);
+    width: 200px;
+    margin-top: 50px;
+  }
+  a {
+    color: white;
+    display: block;
+  }
+  .footer {
+    @include margin_h2;
+    &__lien2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100px;
+      margin-top: -20px;
+    }
+    &__lien {
+      display: flex;
+      align-items: center;
+      p {
+        margin-left: 20px;
+      }
+      &--margintop {
+        margin-top: -40px;
+      }
+      &--marginleft {
+        margin-left: 12px;
+      }
     }
   }
 }

@@ -1,0 +1,71 @@
+@mixin btn_principaux($height: 90px, $width: 400px, $radius: 60px) {
+  margin: 0 auto;
+  height: $height;
+  width: $width;
+  border-radius: $radius;
+}
+
+@mixin btn_principaux_color($color: $color-secondary, $color2: $color-primary) {
+  background: linear-gradient(to bottom right, $color, $color2);
+}
+
+@mixin btn_pricipaux_lien($color: white) {
+  display: block;
+  color: white;
+  padding-top: 25px;
+}
+
+@mixin btn_shadow($shadow: darken($color: #f6f6f7, $amount: 10%)) {
+  box-shadow: $shadow 0px 5px 8px 5px;
+}
+
+@mixin btn_principaux_hover(
+  $color: lighten($color: $color-secondary, $amount: 5%),
+  $color2: lighten($color: $color-primary, $amount: 5%),
+  $shadow: darken($color: #f6f6f7, $amount: 20%)
+) {
+  background: linear-gradient(to bottom right, $color, $color2);
+  box-shadow: $shadow 0px 5px 8px 5px;
+}
+
+@mixin base_bloc($size: $h2-size, $margtop: 80px) {
+  font-size: $h2-size;
+  margin-top: 80px;
+}
+
+@mixin margin_h2($left: 50px) {
+  margin: 0 $left;
+}
+
+@mixin centrer {
+  margin: 0px auto;
+}
+
+@mixin nouveau($color: $color-validation, $size: 50px) {
+  width: $size * 3;
+  height: $size;
+  margin-left: 450px;
+  padding-left: 25px;
+  padding-top: 10px;
+  border-radius: 10px;
+  background: $color;
+  color: darken($color: $color-validation, $amount: 40%);
+}
+
+@mixin remplissage_coeur(
+  $color: $color-primary,
+  $color2: $color-secondary,
+  $time: 500ms
+) {
+  position: absolute;
+  background: linear-gradient(to bottom left, $color 20%, $color2 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  height: 0;
+  transition: all $time ease-in-out;
+}
