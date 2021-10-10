@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "rob";
+  src: url("/police/Roboto-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "rob";
+}
+
+.global_width {
+  width: 768px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+}
+header img {
+  width: 350px;
+}
+
+header i {
+  position: absolute;
+  font-size: 40px;
+  margin-left: -480px;
+  margin-top: 10px;
+}
+
+header {
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=menus.css.map */

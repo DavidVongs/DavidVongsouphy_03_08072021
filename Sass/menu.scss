@@ -1,0 +1,30 @@
+@import "variables/variables.scss";
+
+@font-face {
+  font-family: "rob";
+  src: url("/police/Roboto-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "rob";
+}
+
+.global_width {
+  width: $global-width;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+@import "header/header.scss";
+@import "header/header_back_arrow.scss";
+
+header {
+  background-color: aqua;
+}
