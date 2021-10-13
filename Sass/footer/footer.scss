@@ -1,0 +1,37 @@
+footer {
+  background: $footer-color;
+  font-size: $h2-size;
+  height: 400px;
+  img {
+    filter: invert(100%);
+    width: 200px;
+    margin-top: 50px;
+  }
+  a {
+    color: white;
+    display: block;
+  }
+  .footer {
+    @include margin_h2;
+    &__lien2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100px;
+      margin-top: -20px;
+    }
+    &__lien {
+      display: flex;
+      align-items: center;
+      p {
+        margin-left: 20px;
+      }
+      &--margintop {
+        margin-top: -40px;
+      }
+      &--marginleft {
+        margin-left: 12px;
+      }
+    }
+  }
+}
