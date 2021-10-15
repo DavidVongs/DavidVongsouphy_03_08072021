@@ -29,8 +29,8 @@
 }
 
 @mixin base_bloc($size: $h2-size, $margtop: 80px) {
-  font-size: $h2-size;
-  margin-top: 80px;
+  font-size: $size;
+  margin-top: $margtop;
 }
 
 @mixin margin_h2($left: 50px) {
@@ -68,4 +68,16 @@
   right: 0;
   height: 0;
   transition: all $time ease-in-out;
+}
+
+@mixin bande-horizontale(
+  $color: $color-validation,
+  $width: 115px,
+  $height: 8px,
+  $margtop: -25px
+) {
+  margin-top: -25px;
+  width: 115px;
+  height: 8px;
+  background-color: $color-validation;
 }
