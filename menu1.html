@@ -14,13 +14,17 @@
 
   <body>
     <div class="global_width">
+      <!--HEADER-->
+
       <header>
         <img src="image/ohmyfood.png" alt="logo ohmyfood" />
         <a href="index.html"><i class="fas fa-arrow-left"></i></a>
       </header>
 
+      <!--ARTICLE-->
+
       <article class="menu">
-        <img src="image/francaise-grand.jpg" />
+        <img src="image/francaise-grand.jpg" alt="A la française" />
         <div class="menu__bloc">
           <div class="menu__titre">
             <h1>À la française</h1>
@@ -32,7 +36,7 @@
             </div>
           </div>
           <div class="menu2">
-            <div class="menu__plats">
+            <div class="menu__plats apparition-menu">
               <h2>ENTRÉES</h2>
               <div class="bande-horizontale"></div>
               <div>
@@ -83,7 +87,7 @@
                 </div>
               </div>
             </div>
-            <div class="menu__plats">
+            <div class="menu__plats apparition-menu">
               <h2>PLATS</h2>
               <div class="bande-horizontale"></div>
               <div>
@@ -134,7 +138,7 @@
                 </div>
               </div>
             </div>
-            <div class="menu__plats">
+            <div class="menu__plats apparition-menu">
               <h2>DESSERTS</h2>
               <div class="bande-horizontale"></div>
               <div>
@@ -192,26 +196,23 @@
         </div>
       </article>
 
-      <footer>
-        <div class="footer">
-          <img src="image/ohmyfood.png" alt="logo ohmyfood" />
+      <!--FOOTER-->
 
+      <footer class="footer">
+        <p class="footer__titre">ohmyfood</p>
+        <div class="footer__lien">
           <a href="#">
-            <div class="footer__lien footer__lien--marginleft">
-              <i class="fas fa-utensils"></i>
-              <p>Proposer un restaurant</p>
-            </div>
+            <i class="fas fa-utensils">
+              <span class="margin">Proposer un restaurant</span>
+            </i>
           </a>
           <a href="#">
-            <div class="footer__lien footer__lien--margintop">
-              <i class="fas fa-hands-helping"></i>
-              <p>Devenir partenaire</p>
-            </div>
+            <i class="fas fa-hands-helping">
+              <span>Devenir partenaire</span>
+            </i>
           </a>
-          <div class="footer__lien2">
-            <a href="#">Mentions légales</a>
-            <a href="#">Contact</a>
-          </div>
+          <a href="#">Mentions légales</a>
+          <a href="#">Contact</a>
         </div>
       </footer>
     </div>

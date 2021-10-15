@@ -91,9 +91,21 @@ header i {
   height: 0;
   transition: all 500ms ease-in-out;
 }
+.menu .menu2 {
+  height: 2200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .menu__plats {
   font-size: 30px;
   margin: 0 50px;
+}
+.menu__plats .bande-horizontale {
+  margin-top: -25px;
+  width: 115px;
+  height: 8px;
+  background-color: #99e2d0;
 }
 .menu__plats h2 {
   font-weight: normal;
@@ -154,13 +166,6 @@ header i {
   transition: transform 400ms ease-in-out;
 }
 
-.bande-horizontale {
-  margin-top: -25px;
-  width: 115px;
-  height: 8px;
-  background-color: #99e2d0;
-}
-
 .btn-principaux {
   margin: 0 auto;
   height: 90px;
@@ -184,49 +189,57 @@ header i {
   padding-top: 25px;
 }
 
-.menu2 {
-  height: 2200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-footer {
+.footer {
   background: #353535;
   font-size: 30px;
   height: 400px;
 }
-footer img {
-  filter: invert(100%);
-  width: 200px;
-  margin-top: 50px;
-}
-footer a {
+.footer a {
   color: white;
   display: block;
 }
-footer .footer {
-  margin: 0 50px;
+.footer__titre {
+  color: white;
+  font-family: "shrik";
+  font-size: 40px;
+  margin-left: 50px;
+  padding-top: 30px;
 }
-footer .footer__lien2 {
+.footer__lien {
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100px;
-  margin-top: -20px;
+  margin: 0 50px;
 }
-footer .footer__lien {
-  display: flex;
-  align-items: center;
+.footer__lien .margin {
+  margin-left: 15px;
 }
-footer .footer__lien p {
-  margin-left: 20px;
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    margin-top: 20px;
+  }
+  to {
+    opacity: 1;
+  }
 }
-footer .footer__lien--margintop {
-  margin-top: -40px;
+.apparition-menu {
+  opacity: 0;
+  animation: apparition 1000ms forwards;
 }
-footer .footer__lien--marginleft {
-  margin-left: 12px;
+
+.apparition-menu:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.apparition-menu:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.apparition-menu:nth-child(3) {
+  animation-delay: 0.7s;
 }
 
 /*# sourceMappingURL=menus.css.map */
