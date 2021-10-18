@@ -34,6 +34,11 @@ header img {
   width: 350px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header img {
+    width: 430px;
+  }
+}
 header i {
   position: absolute;
   font-size: 40px;
@@ -193,6 +198,7 @@ header i {
   background: #353535;
   font-size: 30px;
   height: 400px;
+  margin-top: -30px;
 }
 .footer a {
   color: white;
@@ -216,6 +222,12 @@ header i {
   margin-left: 15px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    font-size: 35px;
+    height: 450px;
+  }
+}
 @keyframes apparition {
   from {
     opacity: 0;
@@ -241,5 +253,74 @@ header i {
 .apparition-menu:nth-child(3) {
   animation-delay: 0.7s;
 }
+
+/*responsive*/
+/*Medium*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .global_width {
+    width: auto;
+  }
+
+  .menu {
+    height: 3300px;
+  }
+  .menu__bloc {
+    height: 3100px;
+  }
+  .menu .menu2 {
+    height: 2900px;
+  }
+  .menu__plats {
+    font-size: 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .menu__plats__minibloc {
+    width: 850px;
+    height: 180px;
+  }
+  .menu__plats__minibloc:hover .validé {
+    transform: translate(-150px, 0);
+  }
+  .menu__plats__minibloc:hover .menu__plats__minibloc__prix {
+    margin-right: 180px;
+  }
+  .menu__plats__minibloc__texte {
+    height: 100px;
+    width: 700px;
+  }
+  .menu__plats__minibloc__prix {
+    padding-left: 0px;
+    margin-top: 50px;
+  }
+  .menu__plats__minibloc .validé {
+    margin-left: 850px;
+    height: 180px;
+    width: 150px;
+  }
+  .menu__plats__minibloc .validé__icone {
+    font-size: 55px;
+    margin: 60px 45px;
+  }
+
+  .btn-principaux {
+    margin: 0 auto;
+    height: 110px;
+    width: 440px;
+    border-radius: 60px;
+  }
+
+  .btn-principaux a {
+    color: white;
+    padding-top: 30px;
+    font-size: 35px;
+  }
+
+  .footer {
+    margin-top: 360px;
+  }
+}
+/*responsive*/
+/*large*/
 
 /*# sourceMappingURL=menus.css.map */

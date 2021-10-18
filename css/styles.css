@@ -7,6 +7,11 @@ header img {
   width: 350px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header img {
+    width: 430px;
+  }
+}
 @font-face {
   font-family: "rob";
   src: url("/police/Roboto-Regular.ttf") format("truetype");
@@ -220,44 +225,40 @@ a {
   color: #278870;
 }
 
-footer {
+.footer {
   background: #353535;
   font-size: 30px;
   height: 400px;
+  margin-top: -30px;
 }
-footer img {
-  filter: invert(100%);
-  width: 200px;
-  margin-top: 50px;
-}
-footer a {
+.footer a {
   color: white;
   display: block;
 }
-footer .footer {
-  margin: 0 50px;
+.footer__titre {
+  color: white;
+  font-family: "shrik";
+  font-size: 40px;
+  margin-left: 50px;
+  padding-top: 30px;
 }
-footer .footer__lien2 {
+.footer__lien {
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100px;
-  margin-top: -20px;
+  margin: 0 50px;
 }
-footer .footer__lien {
-  display: flex;
-  align-items: center;
-}
-footer .footer__lien p {
-  margin-left: 20px;
-}
-footer .footer__lien--margintop {
-  margin-top: -40px;
-}
-footer .footer__lien--marginleft {
-  margin-left: 12px;
+.footer__lien .margin {
+  margin-left: 15px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    font-size: 35px;
+    height: 450px;
+  }
+}
 /*loader*/
 .loader {
   position: absolute;
@@ -333,6 +334,68 @@ footer .footer__lien--marginleft {
 
 .lettre:nth-child(8) {
   animation-delay: 0.8s;
+}
+
+/*responsive*/
+/*Medium*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .global_width {
+    width: auto;
+  }
+
+  .localisation__ville {
+    font-size: 55px;
+  }
+  .localisation__ville__icone {
+    margin-top: 55px;
+  }
+  .localisation__bloc {
+    font-size: 35px;
+    height: 550px;
+  }
+  .localisation__bloc__int {
+    width: 720px;
+  }
+
+  .btn-principaux {
+    margin: 0 auto;
+    height: 110px;
+    width: 440px;
+    border-radius: 60px;
+  }
+  .btn-principaux a {
+    display: block;
+    color: white;
+    padding-top: 30px;
+  }
+
+  .fonctionnement {
+    font-size: 35px;
+    margin-top: 80px;
+  }
+  .fonctionnement__etape {
+    width: 750px;
+  }
+
+  .restaurant {
+    font-size: 35px;
+    margin-top: 80px;
+    height: 2850px;
+  }
+  .restaurant__bloc {
+    width: 800px;
+    height: 2550px;
+  }
+  .restaurant__bloc__img {
+    height: 420px;
+  }
+  .restaurant__bloc figure {
+    height: 580px;
+  }
+
+  .nouveau p {
+    margin-left: 600px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

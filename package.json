@@ -4,7 +4,7 @@
   "description": "projet 3 OPC",
   "main": "index.js",
   "scripts": {
-    "Sass": "sass --watch ./Sass/styles.scss:./css/styles.css"
+    "Sass": "sass --watch ./Sass/menu.scss:./css/menus.css"
   },
   "repository": {
     "type": "git",

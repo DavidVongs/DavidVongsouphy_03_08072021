@@ -9,10 +9,10 @@
   background: linear-gradient(to bottom right, $color, $color2);
 }
 
-@mixin btn_pricipaux_lien($color: white) {
+@mixin btn_pricipaux_lien($color: white, $paddingtop: 25px) {
   display: block;
   color: white;
-  padding-top: 25px;
+  padding-top: $paddingtop;
 }
 
 @mixin btn_shadow($shadow: darken($color: #f6f6f7, $amount: 10%)) {

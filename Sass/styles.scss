@@ -195,43 +195,7 @@ a {
   }
 }
 
-footer {
-  background: $footer-color;
-  font-size: $h2-size;
-  height: 400px;
-  img {
-    filter: invert(100%);
-    width: 200px;
-    margin-top: 50px;
-  }
-  a {
-    color: white;
-    display: block;
-  }
-  .footer {
-    @include margin_h2;
-    &__lien2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      height: 100px;
-      margin-top: -20px;
-    }
-    &__lien {
-      display: flex;
-      align-items: center;
-      p {
-        margin-left: 20px;
-      }
-      &--margintop {
-        margin-top: -40px;
-      }
-      &--marginleft {
-        margin-left: 12px;
-      }
-    }
-  }
-}
+@import "footer/footer.scss";
 
 /*loader*/
 
@@ -306,4 +270,65 @@ footer {
 }
 .lettre:nth-child(8) {
   animation-delay: 0.8s;
+}
+
+/*responsive*/
+
+/*Medium*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .global_width {
+    width: auto;
+  }
+
+  .localisation {
+    &__ville {
+      font-size: $txt-size + 20px;
+      &__icone {
+        margin-top: $txt-size + 20px;
+      }
+    }
+    &__bloc {
+      font-size: $h2-size + 5px;
+      height: 550px;
+      &__int {
+        width: 720px;
+      }
+    }
+  }
+
+  .btn-principaux {
+    @include btn_principaux(110px, 440px);
+    a {
+      @include btn_pricipaux_lien($paddingtop: 30px);
+    }
+  }
+
+  .fonctionnement {
+    @include base_bloc($size: 35px);
+    &__etape {
+      width: 750px;
+    }
+  }
+
+  .restaurant {
+    @include base_bloc($size: 35px);
+    height: 2850px;
+    &__bloc {
+      width: 800px;
+      height: 2550px;
+      &__img {
+        height: 420px;
+      }
+      figure {
+        height: 580px;
+      }
+    }
+  }
+
+  .nouveau {
+    p {
+      margin-left: 600px;
+    }
+  }
 }
