@@ -34,9 +34,14 @@ header img {
   width: 350px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
   header img {
     width: 430px;
+  }
+}
+@media all and (min-width: 1024px) {
+  header img {
+    width: 580px;
   }
 }
 header i {
@@ -46,6 +51,20 @@ header i {
   margin-top: 10px;
 }
 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  header i {
+    font-size: 70px;
+    margin-left: -650px;
+    margin-top: 0;
+  }
+}
+@media all and (min-width: 1024px) {
+  header i {
+    font-size: 90px;
+    margin-top: 10px;
+    margin-left: -800px;
+  }
+}
 .menu {
   position: relative;
   width: 100%;
@@ -222,10 +241,16 @@ header i {
   margin-left: 15px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
   .footer {
     font-size: 35px;
     height: 450px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .footer {
+    width: 90%;
+    margin: -40px auto;
   }
 }
 @keyframes apparition {
@@ -256,9 +281,9 @@ header i {
 
 /*responsive*/
 /*Medium*/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
   .global_width {
-    width: auto;
+    width: 1024px;
   }
 
   .menu {
@@ -322,5 +347,38 @@ header i {
 }
 /*responsive*/
 /*large*/
+@media all and (min-width: 1024px) {
+  .global_width {
+    width: 1824px;
+  }
+
+  .menu {
+    width: 90%;
+    margin: 0px auto;
+    overflow: hidden;
+    margin-top: 20px;
+    height: 2300px;
+  }
+  .menu .menu2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 1400px;
+  }
+  .menu img {
+    width: 100%;
+    margin-top: -280px;
+  }
+  .menu__titre {
+    justify-content: center;
+  }
+  .menu__titre i {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .btn-principaux {
+    margin: 300px 160px;
+  }
+}
 
 /*# sourceMappingURL=menus.css.map */

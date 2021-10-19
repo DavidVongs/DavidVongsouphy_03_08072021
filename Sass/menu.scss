@@ -196,9 +196,9 @@ a {
 
 /*Medium*/
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
   .global_width {
-    width: auto;
+    width: 1024px;
   }
   .menu {
     height: 3300px;
@@ -265,3 +265,37 @@ a {
 /*responsive*/
 
 /*large*/
+
+@media all and (min-width: 1024px) {
+  .global_width {
+    width: 1824px;
+  }
+
+  .menu {
+    width: 90%;
+    @include centrer;
+    overflow: hidden;
+    margin-top: 20px;
+    height: 2300px;
+    .menu2 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 1400px;
+    }
+    img {
+      width: 100%;
+      margin-top: -280px;
+    }
+    &__titre {
+      justify-content: center;
+      i {
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .btn-principaux {
+    margin: 300px 160px;
+  }
+}

@@ -7,9 +7,14 @@ header img {
   width: 350px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
   header img {
     width: 430px;
+  }
+}
+@media all and (min-width: 1024px) {
+  header img {
+    width: 580px;
   }
 }
 @font-face {
@@ -253,10 +258,16 @@ a {
   margin-left: 15px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
   .footer {
     font-size: 35px;
     height: 450px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .footer {
+    width: 90%;
+    margin: -40px auto;
   }
 }
 /*loader*/
@@ -338,9 +349,9 @@ a {
 
 /*responsive*/
 /*Medium*/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
   .global_width {
-    width: auto;
+    width: 1024px;
   }
 
   .localisation__ville {
@@ -395,6 +406,53 @@ a {
 
   .nouveau p {
     margin-left: 600px;
+  }
+}
+/*responsive*/
+/*Large*/
+@media all and (min-width: 1024px) {
+  .global_width {
+    width: 1824px;
+  }
+
+  .fonctionnement h2 {
+    text-align: center;
+  }
+  .fonctionnement__bloc {
+    display: flex;
+  }
+  .fonctionnement__etape {
+    width: 550px;
+  }
+
+  .restaurant {
+    height: auto;
+  }
+  .restaurant h2 {
+    text-align: center;
+  }
+  .restaurant__bloc {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 500px;
+  }
+  .restaurant__bloc__img {
+    height: 200px;
+  }
+  .restaurant__bloc figure {
+    height: 350px;
+  }
+  .restaurant__bloc figure img {
+    margin-top: -50px;
+  }
+
+  .nouveau p {
+    margin-left: 200px;
+  }
+
+  .footer {
+    width: auto;
   }
 }
 

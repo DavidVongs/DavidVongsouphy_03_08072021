@@ -6,3 +6,23 @@ header {
     margin-top: 10px;
   }
 }
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    i {
+      font-size: $icone-size + 30px;
+      margin-left: -650px;
+      margin-top: 0;
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  header {
+    i {
+      font-size: $icone-size + 50px;
+      margin-top: 10px;
+      margin-left: -800px;
+    }
+  }
+}

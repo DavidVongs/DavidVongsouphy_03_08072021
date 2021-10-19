@@ -276,9 +276,9 @@ a {
 
 /*Medium*/
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
   .global_width {
-    width: auto;
+    width: 1024px;
   }
 
   .localisation {
@@ -330,5 +330,59 @@ a {
     p {
       margin-left: 600px;
     }
+  }
+}
+
+/*responsive*/
+
+/*Large*/
+
+@media all and (min-width: 1024px) {
+  .global_width {
+    width: 1824px;
+  }
+
+  .fonctionnement {
+    h2 {
+      text-align: center;
+    }
+    &__bloc {
+      display: flex;
+    }
+    &__etape {
+      width: 550px;
+    }
+  }
+
+  .restaurant {
+    height: auto;
+    h2 {
+      text-align: center;
+    }
+    &__bloc {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 500px;
+      &__img {
+        height: 200px;
+      }
+      figure {
+        height: 350px;
+        img {
+          margin-top: -50px;
+        }
+      }
+    }
+  }
+
+  .nouveau {
+    p {
+      margin-left: 200px;
+    }
+  }
+
+  .footer {
+    width: auto;
   }
 }
