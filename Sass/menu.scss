@@ -48,6 +48,9 @@ a {
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     margin-top: -110px;
+    &--extra {
+      margin-top: -580px;
+    }
   }
   &__titre {
     @include base_bloc($size: $h2-size + 10px);
@@ -204,9 +207,16 @@ a {
     height: 3300px;
     &__bloc {
       height: 3100px;
+      &--extra {
+        margin-top: -750px;
+        height: 3300px;
+      }
     }
     .menu2 {
       height: 2900px;
+      &--extra {
+        height: 3100px;
+      }
     }
     &__plats {
       font-size: $h2-size + 10px;
@@ -258,7 +268,7 @@ a {
   }
 
   .footer {
-    margin-top: 360px;
+    margin-top: 560px;
   }
 }
 
@@ -277,6 +287,11 @@ a {
     overflow: hidden;
     margin-top: 20px;
     height: 2300px;
+    &__bloc {
+      &--extra {
+        margin-top: -1150px;
+      }
+    }
     .menu2 {
       flex-direction: row;
       flex-wrap: wrap;

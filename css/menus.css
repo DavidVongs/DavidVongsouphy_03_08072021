@@ -83,6 +83,9 @@ header i {
   border-top-right-radius: 60px;
   margin-top: -110px;
 }
+.menu__bloc--extra {
+  margin-top: -580px;
+}
 .menu__titre {
   font-size: 40px;
   margin-top: 80px;
@@ -292,8 +295,15 @@ header i {
   .menu__bloc {
     height: 3100px;
   }
+  .menu__bloc--extra {
+    margin-top: -750px;
+    height: 3300px;
+  }
   .menu .menu2 {
     height: 2900px;
+  }
+  .menu .menu2--extra {
+    height: 3100px;
   }
   .menu__plats {
     font-size: 40px;
@@ -342,7 +352,7 @@ header i {
   }
 
   .footer {
-    margin-top: 360px;
+    margin-top: 560px;
   }
 }
 /*responsive*/
@@ -358,6 +368,9 @@ header i {
     overflow: hidden;
     margin-top: 20px;
     height: 2300px;
+  }
+  .menu__bloc--extra {
+    margin-top: -1150px;
   }
   .menu .menu2 {
     flex-direction: row;
