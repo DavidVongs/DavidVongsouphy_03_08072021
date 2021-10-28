@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
   font-family: "rob";
-  src: url("/police/Roboto-Regular.ttf") format("truetype");
+  src: url("../police/Roboto-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "shrik";
-  src: url("/police/Shrikhand-Regular.ttf") format("truetype");
+  src: url("../police/Shrikhand-Regular.ttf") format("truetype");
 }
 body {
   font-family: "rob";
@@ -160,12 +160,17 @@ header i {
 }
 .menu__plats__minibloc__texte {
   display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
   width: 550px;
   height: 80px;
   margin-left: 20px;
+}
+.menu__plats__minibloc__texte .ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu__plats__minibloc__prix {
   margin-top: 30px;
